@@ -1,2 +1,2 @@
-# to-do-rectJS-app
+# to-do-react
 Created with CodeSandbox
