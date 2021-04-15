@@ -18,14 +18,18 @@ export default function TodoListItem({ todo, inprogress, id }) {
     <div className="list-item-inline">
       <p>
         <ListItem className="clrs">
-          <ListItemText
-            primary={todo}
-            secondary={inprogress ? "In Progress ⏳" : "Completed ✅"}
-          />
-          <Button onClick={toggleInProgress}>
+          <div className="inp-ctr">
+            <ListItemText
+              primary={todo}
+              secondary={inprogress ? "In Progress ⏳" : "Completed ✅"}
+            />
+          </div>
+          <Button className="spl-btn" onClick={toggleInProgress}>
             {inprogress ? "Done" : "UnDone"}
           </Button>
-          <Button onClick={deleteTodo}>X</Button>
+          <Button className="spl-btn" onClick={deleteTodo}>
+            X
+          </Button>
         </ListItem>
       </p>
     </div>
