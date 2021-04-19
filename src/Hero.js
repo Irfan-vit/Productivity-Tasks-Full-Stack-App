@@ -28,7 +28,7 @@ const Hero = ({ handleLogout }) => {
 
   const addTodo = (e) => {
     e.preventDefault();
-    if (todoInput === ".") {
+    if (todoInput === "") {
       alert("Please Give Any Task");
     } else {
       db.collection("todos").add({
