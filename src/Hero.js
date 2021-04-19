@@ -61,7 +61,7 @@ const Hero = ({ handleLogout }) => {
           <div className="btn-ctr">
             <Button
               className="btn-stl"
-              disabled={todoInput < 1}
+              // disabled={todoInput < 1}
               type="submit"
               varient="contained"
               onClick={addTodo}
